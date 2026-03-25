@@ -14,6 +14,7 @@ spring:
           # 로컬 시스템의 ssh 설정을 무시
           search-paths:
             - config
+            - config/department
           ignore-local-ssh-settings: true
           # ssh 호스트의 공개키를 작성한다.
           host-key: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
