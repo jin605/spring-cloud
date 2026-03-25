@@ -10,4 +10,23 @@ spring:
     config:
       server:
         git:
-          
+          uri: git@github.com:jin605/spring-cloud-config.git
+          # 로컬 시스템의 ssh 설정을 무시
+          search-paths:
+            - config
+          ignore-local-ssh-settings: true
+          # ssh 호스트의 공개키를 작성한다.
+          host-key: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
+          # 공개키를 생성할 때 사용한 알로리즘을 작성한다.
+          host-key-algorithm: ecdsa-sha2-nistp256
+          # 생성한 비공개키를 입력한다.
+          private-key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            QyNTUxOQAAACCIWTdqw0VrGucAt90zvyKnyWRh8P0MDz+wv78YoGfxPAAAAJihjCnBoYwp
+            wQAAAAtzc2gtZWQyNTUxOQAAACCIWTdqw0VrGucAt90zvyKnyWRh8P0MDz+wv78YoGfxPA
+            AAAEDwKlDutS87x8gwxJkfmQcJ+7M+tZcnWhwPJioZyiD3jYhZN2rDRWsa5wC33TO/IqfJ
+            ZGHw/QwPP7C/vxigZ/E8AAAAEWppbmRkZDNAZ21haWwuY29tAQIDBA==
+            -----END OPENSSH PRIVATE KEY-----
+encrypt:
+  key: b1e2y3o4n5d6#
